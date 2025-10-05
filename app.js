@@ -115,6 +115,10 @@ app.use("/listings/:id/reviews", reviewRouter);
 app.use("/", userRouter);
 
 
+app.get("/", (req, res) => {
+    res.redirect("/listings");
+});
+
 
 // Page not found middleware
 //app.all("*", (req, res, next) => {

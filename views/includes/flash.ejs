@@ -1,0 +1,16 @@
+<% if(success && success.length) { %>     <!--SUCCESS EK ARRAY HAI. success k saath success.length bhi exist krni chahiye and it should be >0 -->
+    <div class="alert alert-success alert-dismissible fade show col-6 offset-3" role="alert">
+      <%= success %>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+<% } %>
+
+
+
+
+<% if(error && error.length) { %>
+    <div class="alert alert-danger alert-dismissible fade show col-6 offset-3" role="alert">
+      <%= error %>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+<% } %>

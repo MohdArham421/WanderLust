@@ -41,11 +41,29 @@
             <div class="invalid-feedback">Location should be valid</div>
         </div>
 
-        <div mb-3>
-            <label for="category" class="form-label">Category</label>
-            <input name="listing[category]" placeholder="Enter Category of your Listing" type="text" class="form-control" required>
-            <div class="invalid-feedback">Category should be valid</div>
-        </div>
+        <div class="mb-3">
+    <label for="category" class="form-label">Category</label>
+    <select 
+        id="category" 
+        name="listing[category]" 
+        class="form-select" 
+        required
+    >
+        <option value="" selected disabled>Select a category</option>
+        <option value="Rooms">Rooms</option>
+        <option value="Iconic Cities">Iconic Cities</option>
+        <option value="Mountains">Mountains</option>
+        <option value="Castles">Castles</option>
+        <option value="Domes">Domes</option>
+        <option value="Boats">Boats</option>
+        <option value="Camping">Camping</option>
+        <option value="Amazing Pools">Amazing Pools</option>
+        <option value="Beaches">Beaches</option>
+        <option value="Arctic">Arctic</option>
+    </select>
+    <div class="invalid-feedback">Please select a valid category</div>
+</div>
+
 
         <br>
         <button class="btn btn-dark add-btn mt-3">Add</button>

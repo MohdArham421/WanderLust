@@ -120,11 +120,6 @@ app.get("/", (req, res) => {
 });
 
 
-// Page not found middleware
-//app.all("*", (req, res, next) => {
-//    next(new ExpressError(404, "Page not found!"));
-//});
-
 
 
 // MiddleWare

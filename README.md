@@ -130,11 +130,6 @@ SECRET=session_secret
 
 Run Application
 
-```bash
-npm start
-```
-
-or
 
 ```bash
 node app.js
